@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <script type="text/javascript" src="js/tatry.js"></script>
+
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div class="header">
+  <h1>Kontakt</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="index.html">Aktualności</a>
+      <div class="container">
+        <a href="javascript:void(0)" class="title">Wyprawy<span>+</span></a>  
+            <div class="content">
+                <a href="tatry.html">W Tatry</a>
+                <a href="alpy.html">W Alpy</a>
+                <a href="himalaje.html">W Himalaje</a>
+            </div>
+      </div>
+      <div class="container">
+        <a href="javascript:void(0)" class="title">Aktualna pogoda<span>+</span></a>  
+            <div class="content">
+                <a target="_blank" rel="noopener noreferrer" href="https://tpn.pl/zwiedzaj/pogoda"> Tatry</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.mountain-forecast.com/peaks/Mont-Blanc/forecasts/4807">Alpy</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.mountain-forecast.com/peaks/Mount-Everest/forecasts/8850">Himalaje</a>
+            </div>
+      </div>
+  </div>
+
+  <div class="main">
+    
+      <br/>
+      <br/>
+      <div class="details" id="details">
+   
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+                  <div class="signin" id="signin">
+                    <form action="mailto:s21356@pjwstk.edu.pl">
+                        <label for="fname">Imię</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Twoje imię..">
+
+                        <label for="lname">Nazwisko</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Twoje nazwisko..">
+
+                        <label for="email">email</label>
+                        <input type="text" id="email" name="email" placeholder="Podaj swój email..">
+
+                        <label for="adds">Informacje dodatkowe</label>
+                        <textarea id="adds" name="adds" placeholder="Napisz coś.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Wyślij">
+                    </form>
+                  </div>
+          <br/>
+          <br/>
+            
+        </div>
+      
+  </div>
+
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">PJATK 2021</div>
+
+</body>
+    <script>
+        let title = document.querySelectorAll(".title");
+
+for(let i = 0; i < title.length; i++){
+  title[i].addEventListener("click", function(){
+    let result = this.nextElementSibling;
+    result.classList.toggle("active");
+
+     if(this.firstElementChild.innerText === "+"){
+       this.firstElementChild.innerText = "-"
+       }
+    else{
+      this.firstElementChild.innerText = "+"
+    }
+
+  })
+}
+    </script>
+</html>

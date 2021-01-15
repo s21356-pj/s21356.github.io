@@ -1,0 +1,316 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tatry.css">
+    <script type="text/javascript" src="js/tatry.js"></script>
+
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div class="header">
+  <h1>Tatry</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="news.html">Aktualności</a>
+      <div class="container">
+        <a href="javascript:void(0)" class="title">Wyprawy<span>+</span></a>  
+            <div class="content">
+                <a href="alpy.html">W Alpy</a>
+                <a href="himalaje.html">W Himalaje</a>
+            </div>
+      </div>
+      <div class="container">
+        <a href="javascript:void(0)" class="title">Aktualna pogoda<span>+</span></a>  
+            <div class="content">
+                <a target="_blank" rel="noopener noreferrer" href="https://tpn.pl/zwiedzaj/pogoda"> Tatry</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.mountain-forecast.com/peaks/Mont-Blanc/forecasts/4807">Alpy</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.mountain-forecast.com/peaks/Mount-Everest/forecasts/8850">Himalaje</a>
+            </div>
+      </div>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+
+  <div class="main">
+    <h2>Mnich</h2>
+    <img src="img/mnich1_wide.jpg" class="centerimage" onclick="openModal();currentSlide(1)">
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/mnich1_wide.jpg" style="width:50%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/mnich2_wide.jpg" style="width:50%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/mnich3_wide.jpg" style="width:50%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="img/mnich4_wide.jpg" style="width:50%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/mnich1_wide.jpg" style="width:60%" onclick="currentSlide(1)" alt="Mnich..">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/mnich2_wide.jpg" style="width:60%" onclick="currentSlide(2)" alt="Mnich..">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/mnich3_wide.jpg" style="width:60%" onclick="currentSlide(3)" alt="Mnich..">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/mnich4_wide.jpg" style="width:60%" onclick="currentSlide(4)" alt="Mnich - droga 'Przez płytę'">
+            </div>
+          </div>
+        </div>
+      
+        <p>Mnich jest bez wątpienia najsłynniejszą turnią w otoczeniu Morskiego Oka. Jej charakterystyczny kształt od dziesięcioleci przykuwa uwagę turystów spoglądających na niego znad brzegu jeziora.
+
+        Zdobycie Mnicha w 1880 roku przez Jana Gwalberta Pawlikowskiego i przewodnika Macieja Sieczkę uważa się za początek polskiego taternictwa. Do dzisiaj na Mnichu zostało poprowadzonych kilkadziesiąt dróg wspinaczkowych – od prostych dróg kursowych dla początkujących, po ekstremalnie trudne drogi sportowe na wschodniej ścianie.
+
+        Wejście z przewodnikiem odbywa się drogą pierwszych zdobywców, czyli przez tzw. Płytę. Trudność wejścia to II w skali tatrzańskiej. Jest to najłatwiejsza – ale już wspinaczkowa – droga na szczyt. Zejście z wierzchołka poprzez opuszczenie lub zjazd na linie. Dla osób o zacięciu taternickim możliwe wejście zacięciem Robakiewicza (trudność III, długość około 100m) i dalej przez Płytę na wierzchołek.</p>
+        <br/>
+        <br/>
+      <button class="button"  onclick="showDetails()">Szczegóły</button>
+      <br/>
+      <br/>
+      <div class="details" id="details">
+          
+                <table class="table1">
+                    <tr>
+                        <th>Data rozpoczęcia</th>
+                        <th>15.05, 29.05, 12.06, 26.06, 17.07, 31.07, 14.08, 28.08</th> 
+
+
+                    </tr>
+                    <tr>
+                        <td>Czas trwania</td>
+                        <td>2 dni</td>
+
+                    </tr>
+                    <tr>
+                        <td>Koszt indywidualny</td>
+                        <td>500 pln</td>
+
+                    </tr>
+                    <tr>
+                        <td>Koszt obejmuje</td>
+                        <td>opiekę instruktora</td>
+
+                    </tr>
+                    <tr>
+                        <td>Koszt nie obejmuje</td>
+                        <td>dojazdu, wyżywienia, noclegu, ubezpieczenia</td>
+
+                    </tr>
+                    <tr>
+                        <td>Lokalizacja</td>
+                        <td>Tatry Wysokie</td>
+
+                    </tr>
+                </table>
+                     <br/>
+            <br/>
+          <button class="button"  onclick="showDetails3()">Zapisz się!</button>
+          <br/>
+          <br/>
+                  <div class="signin1" id="signin1">
+                    <form action="mailto:s21356@pjwstk.edu.pl">
+                        <label for="fname">Imię</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Twoje imię..">
+
+                        <label for="lname">Nazwisko</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Twoje nazwisko..">
+
+                        <label for="email">email</label>
+                        <input type="text" id="email" name="email" placeholder="Podaj swój email..">
+
+                        <label for="term">Termin</label>
+                        <select id="term" name="term">
+                            <option value="15.05">15.05</option>
+                            <option value="29.05">29.05</option>
+                            <option value="12.06">12.06</option>
+                            <option value="26.06">26.06</option>
+                            <option value="17.07">17.07</option>
+                            <option value="31.07">31.07</option>
+                            <option value="14.08">14.08</option>
+                            <option value="28.08">28.08</option>
+                        </select>
+
+                        <label for="adds">Informacje dodatkowe</label>
+                        <textarea id="adds" name="adds" placeholder="Napisz coś.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Wyślij">
+                    </form>
+                  </div>
+          <br/>
+          <br/>
+            
+        </div>
+      
+  </div>
+
+  <div class="right">
+    <h2>Lodowy Szczyt</h2>
+    <img src="img/lodowy1.jpg" class="centerimage" onclick="openModal1();currentSlide1(1)">
+        <div id="myModal1" class="modal1">
+          <span class="close cursor" onclick="closeModal1()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides1">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/lodowy1.jpg" style="width:50%">
+            </div>
+            <div class="mySlides1">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/lodowy2.jpg" style="width:50%">
+            </div>
+            <div class="mySlides1">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/lodowy3.jpg" style="width:50%">
+            </div>
+            <div class="mySlides1">
+              <div class="numbertext">4 / 4</div>
+              <img src="img/lodowy4.jpg" style="width:50%">
+            </div>
+
+            <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+            <div class="caption-container1">
+              <p id="caption1"></p>
+            </div>
+            <div class="column">
+              <img class="demo1 cursor" src="img/lodowy1.jpg" style="width:60%" onclick="currentSlide1(1)" alt="Lodowy Szczyt..">
+            </div>
+            <div class="column">
+              <img class="demo1 cursor" src="img/lodowy2.jpg" style="width:60%" onclick="currentSlide1(2)" alt="Lodowy Szczyt..">
+            </div>
+            <div class="column">
+              <img class="demo1 cursor" src="img/lodowy3.jpg" style="width:60%" onclick="currentSlide1(3)" alt="Lodowy Szczyt..">
+            </div>
+            <div class="column">
+              <img class="demo1 cursor" src="img/lodowy4.jpg" style="width:60%" onclick="currentSlide1(4)" alt="Lodowy Szczyt..">
+            </div>
+          </div>
+        </div>
+      <p>Trzeci pod względem wysokości szczyt w Tatrach (2628 m n.p.m) i jednocześnie najwyższy w grani głównej Tatr. Nazwa szczytu najprawdopodobniej pochodzi od połaci śniegu, które zazwyczaj długo utrzymują się w lecie na pn scianach. Dzięki swemu położeniu Lodowy stanowi jeden z najatrakcyjniejszych celów wycieczek tatrzańskich, z jego szczytu rozpościera się jedna z najwspanialszych panoram w Tatrach.
+
+Można stamtąd podziwiać m.in. Gorce, Babią Górę, czy nawet przy dobrej widoczności Kraków. Lodowy wznosi się pomiędzy Doliną Jaworową i Doliną Małej Zimnej Wody. Pierwsze znane wejście odnotowano już w 1843 roku.
+
+Pierwszego polskiego wejścia na szczyt dokonał ks. Józef Stolarczyk z przewodnikami w 1867 r.
+
+Plan wycieczki: Wyjazd samochodem z Zakopanego wcześnie rano z przewodnikiem. Dojazd do Smokowca i wyjście lub wyjazd na Hrebieniok. Następnie wędrówka doliną Małej Zimnej Wody do Chaty Téry’ego i doliną Pięciu Stawów Spiskich w kierunku Śnieżnego Szczytu i drogą przez tzw. „Konia” na szczyt Lodowego. Powrót tą samą trasą.</p>
+        <br/>
+        <br/>
+      <button class="button"  onclick="showDetails1()">Szczegóły</button>
+      <br/>
+      <br/>
+      <div class="details1" id="details1">
+          
+            <table class="table1">
+                <tr>
+                    <th>Data rozpoczęcia</th>
+                    <th>15.05, 24.05, 16.06, 22.06, 19.07, 28.07, 18.08, 26.08, 12.09, 26.09</th>
+                     
+                                        
+                </tr>
+                <tr>
+                    <td>Czas trwania</td>
+                    <td>2 dni</td>
+                    
+                </tr>
+                <tr>
+                    <td>Koszt indywidualny</td>
+                    <td>500 pln</td>
+                    
+                </tr>
+                <tr>
+                    <td>Koszt obejmuje</td>
+                    <td>opiekę instruktora</td>
+                    
+                </tr>
+                <tr>
+                    <td>Koszt nie obejmuje</td>
+                    <td>dojazdu, wyżywienia, noclegu, ubezpieczenia</td>
+                    
+                </tr>
+                <tr>
+                    <td>Lokalizacja</td>
+                    <td>Tatry Wysokie</td>
+                    
+                </tr>
+            </table>
+            <br/>
+            <br/>
+          <button class="button"  onclick="showDetails2()">Zapisz się!</button>
+          <br/>
+          <br/>
+                  <div class="signin" id="signin">
+                    <form action="mailto:s21356@pjwstk.edu.pl">
+                        <label for="fname">Imię</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Twoje imię..">
+
+                        <label for="lname">Nazwisko</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Twoje nazwisko..">
+
+                        <label for="email">email</label>
+                        <input type="text" id="email" name="email" placeholder="Podaj swój email..">
+
+                        <label for="term">Termin</label>
+                        <select id="term" name="term">
+                            <option value="15.05">15.05</option>
+                            <option value="24.05">24.05</option>
+                            <option value="16.06">16.06</option>
+                            <option value="22.06">22.06</option>
+                            <option value="19.07">19.07</option>
+                            <option value="28.07">28.07</option>
+                            <option value="18.08">18.08</option>
+                            <option value="26.08">26.08</option>
+                            <option value="12.09">12.09</option>
+                            <option value="26.09">26.09</option>
+                        </select>
+
+                        <label for="adds">Informacje dodatkowe</label>
+                        <textarea id="adds" name="adds" placeholder="Napisz coś.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Wyślij">
+                    </form>
+                  </div>
+          <br/>
+          <br/>
+    </div>
+  </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">PJATK 2021</div>
+
+</body>
+<script>
+    let title = document.querySelectorAll(".title");
+    for(let i = 0; i < title.length; i++){
+      title[i].addEventListener("click", function(){
+        let result = this.nextElementSibling;
+        result.classList.toggle("active");
+
+         if(this.firstElementChild.innerText === "+"){
+           this.firstElementChild.innerText = "-"
+           }
+        else{
+          this.firstElementChild.innerText = "+"
+        }
+
+      })
+    }
+</script>
+</html>

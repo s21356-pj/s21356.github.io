@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Wyprawy w góry</title>
+</head>
+<body>
+<div class="header" id="myHeader">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">Aktualności</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Wyprawy</a>
+        <div class="dropdown-content">
+          <a href="tatry.html">W Tatry</a>
+          <a href="alpy.html">W Alpy</a>
+          <a href="himalaje.html">W Himalaje</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Aktualna pogoda</a>
+        <div class="dropdown-content">
+           <a target="_blank" rel="noopener noreferrer" href="https://tpn.pl/zwiedzaj/pogoda"> Tatry</a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.mountain-forecast.com/peaks/Mont-Blanc/forecasts/4807">Alpy</a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.mountain-forecast.com/peaks/Mount-Everest/forecasts/8850">Himalaje</a>
+        </div>
+      </li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    <div class="menu" id="menu">
+        <a href="news.html">Aktualności</a>
+      <div class="container">
+        <a href="javascript:void(0)" class="title">Wyprawy<span>+</span></a>  
+            <div class="content">
+                <a href="tatry.html">W Tatry</a>
+                <a href="alpy.html">W Alpy</a>
+                <a href="himalaje.html">W Himalaje</a>
+            </div>
+      </div>
+      <div class="container">
+        <a href="javascript:void(0)" class="title">Aktualna pogoda<span>+</span></a>  
+            <div class="content">
+                <a target="_blank" rel="noopener noreferrer" href="https://tpn.pl/zwiedzaj/pogoda"> Tatry</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.mountain-forecast.com/peaks/Mont-Blanc/forecasts/4807">Alpy</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.mountain-forecast.com/peaks/Mount-Everest/forecasts/8850">Himalaje</a>
+            </div>
+      </div>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+</div>
+<div class="cytat">
+    <h1>"Są tylko trzy prawdziwe sporty: Walki byków, wyścigi samochodowe i alpinizm - reszta to tylko gry"</h1><br>
+    <div style="text-align:right;padding:0px;margin-top:0px;"><h1>Ernest Hemingway.</h1></div>
+</div>
+    
+    <script>
+        let title = document.querySelectorAll(".title");
+
+        for(let i = 0; i < title.length; i++){
+          title[i].addEventListener("click", function(){
+            let result = this.nextElementSibling;
+            result.classList.toggle("active");
+
+             if(this.firstElementChild.innerText === "+"){
+               this.firstElementChild.innerText = "-"
+               }
+            else{
+              this.firstElementChild.innerText = "+"
+            }
+
+          })
+        }
+    </script>
+</body>
+</html>
